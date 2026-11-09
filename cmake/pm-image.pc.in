@@ -1,0 +1,9 @@
+prefix=@PM_IMAGE_PC_PREFIX@
+libdir=${prefix}/@PM_IMAGE_PC_LIBDIR@
+includedir=${prefix}/@PM_IMAGE_PC_INCLUDEDIR@
+
+Name: pm-image
+Description: PolyMech still-image analysis
+Version: @PROJECT_VERSION@
+Libs: -L${libdir} -lpm-image
+Cflags: -I${includedir} -I${includedir}/images -DPM_IMAGE_SHARED=1
